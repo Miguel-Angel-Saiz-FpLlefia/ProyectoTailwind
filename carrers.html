@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Proyecto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=geist-mono@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              source: ['"Source Serif 4"', "sans-serif"],
+              "serif-pro": ['"Source Serif Pro"', "serif"],
+              radio: ['"Radio Canada Big:Regular"', "sans-serif"],
+              radio_2: ['"Radio Canada Big"', "sans-serif"],
+              geist: ['"Geist Mono"', "monospace"],
+            },
+            backgroundImage: {
+              "background-3":
+                "linear-gradient(180deg, #A6D3FF 0%, #FFF4DF 100%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background-3">
+    <header
+      class="w-full h-15 fixed top-0 left-0 bg-transparent flex-col items-center"
+    >
+      <nav class="w-full flex justify-between items-center">
+        <div>
+          <img src="img/Aetherfield_logo.svg" alt="" class="m-5" />
+        </div>
+
+        <ul
+          class="flex items-center justify-end md:justify-between w-auto md:w-[395px] m-4"
+        >
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./index.html">Product</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./journal.html">Journal</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./about.html">About</a>
+          </li>
+          <li
+            class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="#">Carrers</a>
+          </li>
+          <li class="hidden md:block">
+            <a
+              href=""
+              class="group md:flex justify-between items-center gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer"
+            >
+              <p>Get started</p>
+              <img
+                src="img/Arrow_Black.svg"
+                alt=""
+                class="transition-transform duration-500 group-hover:translate-x-2"
+              />
+            </a>
+          </li>
+          <li
+            id="more_header_btn"
+            class="block hover:opacity-25 cursor-pointer duration-700 md:hidden lg:hidden"
+          >
+            <img
+              src="./img/Menu_icon_more.svg"
+              alt=""
+              id="icon_more_menu"
+              class="w-4 h-4"
+            />
+          </li>
+        </ul>
+      </nav>
+      <div
+        id="list_menu_more"
+        class="hidden w-full h-96 pr-5 pb-5 pl-5 md:hidden bg-white/80"
+      >
+        <ul>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./index.html">Product</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./journal.html">Journal</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./about.html">About</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] font-bold hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="#">Carrers</a>
+          </li>
+          <li class="pt-6 flex items-center text-center justify-center">
+            <a
+              href=""
+              class="h-13 w-full bg-[oklch(14.7%_0.004_49.25)] text-2xl text-white group gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer"
+            >
+              <p class="p-4">Get started</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div
+        class="flex flex-col items-center px-5 mt-[120px] md:mt-[140px] lg:px-[125px]"
+      >
+        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">Careers at</h1>
+        <h2 class="font-bold text-4xl md:text-5xl lg:text-6xl">Aetherfield</h2>
+      </div>
+
+      <div class="mt-8 md:mt-10 px-5 flex flex-col gap-4 lg:px-[230px]">
+        <div
+          class="rounded-lg bg-[oklch(97.1%_0.013_17.38)] flex flex-col gap-6 md:flex-row"
+        >
+          <div class="px-6 mt-6 md:mt-10 md:ml-10 md:px-0">
+            <p class="text-lg font-bold">UX Designer</p>
+            <div class="opacity-45 flex gap-2">
+              <p>Contract</p>
+              <p>·</p>
+              <p>San Francisco, CA</p>
+            </div>
+            <p class="mt-4 md:mt-6 md:mb-10">
+              Shape the tools that drive climate intelligence. You’ll lead
+              cross-functional teams to build thoughtful, scalable solutions for
+              sustainability-forward organizations.
+            </p>
+          </div>
+
+          <div
+            class="w-[100px] h-[38px] flex items-center justify-center bg-[oklch(14.7%_0.004_49.25)] ml-6 mb-6 md:mb-0 md:ml-0 group md:mr-10 md:mt-10"
+          >
+            <a
+              href=""
+              class="w-[100px] text-center text-white group-hover:opacity-75 duration-700"
+              >View role</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="rounded-lg bg-[oklch(97.1%_0.013_17.38)] flex flex-col gap-6 md:flex-row"
+        >
+          <div class="px-6 mt-6 md:mt-10 md:ml-10 md:px-0">
+            <p class="text-lg font-bold">Data Scientist</p>
+            <div class="opacity-45 flex gap-2">
+              <p>Full-time</p>
+              <p>·</p>
+              <p>Denver, CO</p>
+            </div>
+            <p class="mt-4 md:mt-6 md:mb-10">
+              Help build the intelligence layer for climate action. You’ll turn
+              complex sustainability data into clear, actionable insights for
+              enterprise teams.
+            </p>
+          </div>
+          <div
+            class="w-[100px] h-[38px] flex items-center justify-center bg-[oklch(14.7%_0.004_49.25)] ml-6 mb-6 md:mb-0 md:ml-0 group md:mr-10 md:mt-10"
+          >
+            <a
+              href="./data_scientist.html"
+              class="w-[100px] text-center text-white group-hover:opacity-75 duration-700"
+              >View role</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="rounded-lg bg-[oklch(97.1%_0.013_17.38)] flex flex-col gap-6 md:flex-row"
+        >
+          <div class="px-6 mt-6 md:mt-10 md:ml-10 md:px-0">
+            <p class="text-lg font-bold">Product Manager</p>
+            <div class="opacity-45 flex gap-2">
+              <p>Part-time</p>
+              <p>·</p>
+              <p>Seattle, WA</p>
+            </div>
+            <p class="mt-4 md:mt-6 md:mb-10">
+              Shape the tools that drive climate intelligence. You’ll lead
+              cross-functional teams to build thoughtful, scalable solutions for
+              sustainability-forward organizations.
+            </p>
+          </div>
+          <div
+            class="w-[100px] h-[38px] flex items-center justify-center bg-[oklch(14.7%_0.004_49.25)] ml-6 mb-6 md:mb-0 md:ml-0 group md:mr-10 md:mt-10"
+          >
+            <a
+              href=""
+              class="w-[100px] text-center text-white group-hover:opacity-75 duration-700"
+              >View role</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="rounded-lg bg-[oklch(97.1%_0.013_17.38)] flex flex-col gap-6 md:flex-row mb-[120px] border-2 border-dashed border-black"
+        >
+          <div class="px-6 mt-6 md:mt-10 md:ml-10 md:px-0">
+            <p class="text-lg font-bold">Open application</p>
+            <div class="opacity-45 flex gap-2">
+              <p>Full-time</p>
+              <p>·</p>
+              <p>Denver, CO</p>
+            </div>
+            <p class="mt-4 md:mt-6 md:mb-10">
+              Don’t see your role available? Apply for an open application!
+            </p>
+          </div>
+
+          <div
+            class="w-[100px] h-[38px] flex items-center justify-center bg-[oklch(14.7%_0.004_49.25)] ml-6 mb-6 md:mb-0 md:ml-0 group md:mr-10 md:mt-10"
+          >
+            <a
+              href=""
+              class="w-[100px] text-center text-white group-hover:opacity-75 duration-700"
+              >View role</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <picture>
+        <source srcset="./img/Footer_Complete.svg" media="(min-width: 768px)" />
+        <img
+          src="./img/Footer.svg"
+          alt="Sustainability"
+          class="w-full h-auto"
+        />
+      </picture>
+    </footer>
+  </body>
+
+  <script>
+    const btn_more = document.querySelector("#more_header_btn");
+    let icon = document.querySelector("#icon_more_menu");
+    let menu_more = document.querySelector("#list_menu_more");
+
+    btn_more.addEventListener("click", () => {
+      if (icon.src.includes("Menu_icon_more.svg")) {
+        icon.src = "img/Close_Icon.svg";
+        menu_more.classList.remove("hidden");
+        menu_more.classList.add("block");
+      } else {
+        icon.src = "img/Menu_icon_more.svg"; // Vuelve a la flecha original
+        menu_more.classList.remove("block");
+        menu_more.classList.add("hidden");
+      }
+    });
+  </script>
+</html>

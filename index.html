@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Proyecto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=geist-mono@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              source: ['"Source Serif 4"', "sans-serif"],
+              "serif-pro": ['"Source Serif Pro"', "serif"],
+              radio: ['"Radio Canada Big:Regular"', "sans-serif"],
+              radio_2: ['"Radio Canada Big"', "sans-serif"],
+              geist: ['"Geist Mono"', "monospace"],
+            },
+            backgroundImage: {
+              "background-3":
+                "linear-gradient(180deg, #A6D3FF 0%, #FFF4DF 100%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <header
+      class="w-full h-15 fixed top-0 left-0 bg-transparent flex-col items-center"
+    >
+      <nav class="w-full flex justify-between items-center">
+        <div>
+          <img src="img/Aetherfield_logo.svg" alt="" class="m-5" />
+        </div>
+
+        <ul
+          class="flex items-center justify-end md:justify-between w-auto md:w-[395px] m-4"
+        >
+          <li
+            class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="#">Product</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./journal.html">Journal</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./about.html">About</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./carrers.html">Carrers</a>
+          </li>
+          <li class="hidden md:block">
+            <a
+              href=""
+              class="group md:flex justify-between items-center gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer"
+            >
+              <p>Get started</p>
+              <img
+                src="img/Arrow_Black.svg"
+                alt=""
+                class="transition-transform duration-500 group-hover:translate-x-2"
+              />
+            </a>
+          </li>
+          <li
+            id="more_header_btn"
+            class="block hover:opacity-25 cursor-pointer duration-700 md:hidden lg:hidden"
+          >
+            <img
+              src="./img/Menu_icon_more.svg"
+              alt=""
+              id="icon_more_menu"
+              class="w-4 h-4"
+            />
+          </li>
+        </ul>
+      </nav>
+      <div
+        id="list_menu_more"
+        class="hidden w-full h-96 pr-5 pb-5 pl-5 md:hidden bg-white/80"
+      >
+        <ul>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] font-bold hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="#">Product</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./journal.html">Journal</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./about.html">About</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./carrers.html">Carrers</a>
+          </li>
+          <li class="pt-6 flex items-center text-center justify-center">
+            <a
+              href=""
+              class="h-13 w-full bg-[oklch(14.7%_0.004_49.25)] text-2xl text-white group gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer"
+            >
+              <p class="p-4">Get started</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="flex flex-col items-center bg-background-3">
+        <div
+          class="mt-[120px] ml-5 mr-5 flex flex-col items-center gap-6 md:gap-8 mt-[140px]"
+        >
+          <div class="text-center">
+            <h1 class="text-4xl font-semi font-source font-normal">
+              Sustainability insights,
+            </h1>
+            <h2 class="text-3xl font-semibold font-radio font-normal">
+              built for business
+            </h2>
+            <p class="mt-3 text-lg md:mt-4">
+              Track impact, reduce emissions, and accelerate progress—with
+              clarity and confidence.
+            </p>
+          </div>
+
+          <div>
+            <ul class="flex flex-col items-center gap-4 w-full md:flex-row">
+              <li
+                class="w-[164px] h-[46px] bg-black flex items-center justify-center hover: cursor-pointer"
+              >
+                <a
+                  href=""
+                  class="text-white font-radio text-sm flex items-center gap-2 hover:opacity-65 duration-300"
+                >
+                  <span class="w-1.5 h-1.5 bg-white"></span>
+                  Request a demo
+                </a>
+              </li>
+
+              <li
+                class="w-[214px] h-[46px] bg-black flex items-center justify-center hover: cursor-pointer"
+              >
+                <a
+                  href=""
+                  class="text-white font-radio text-sm flex items-center gap-2 hover:opacity-65 duration-300"
+                >
+                  <span class="w-1.5 h-1.5 bg-white"></span>
+                  Explore the platform
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pl-5 pr-5 w-full mt-8 ml-5 mr-5 border-black rounded-xl md:max-w-3xl lg:max-w-5xl"
+        >
+          <img src="./img/graph_index.svg" alt="" class="w-full" />
+        </div>
+      </div>
+
+      <div
+        data-animate
+        class="opacity-0 translate-y-20 transition-all duration-[1200ms] ease-out"
+      >
+        <h2
+          class="mt-10 ml-5 mr-5 text-3xl font-bold text-center font-bold md:mt-20 mr-[94px] ml-[94px] lg:mt-[120px] ml-[334px] mr-[334px]"
+        >
+          Everything you need to measure, model, and act on sustainability
+        </h2>
+        <div
+          class="flex flex-col gap-6 mt-6 ml-5 mr-5 mb-10 md:mt-10 mb-20 gap-10 lg:flex-row items-center mb-30"
+        >
+          <img
+            src="./img/data_img_Everything_section.svg"
+            alt=""
+            class="w-full md:max-w-3xl lg:max-w-5xl"
+          />
+
+          <div class="w-full flex flex-col gap-6 mt-6 md:mt-10">
+            <div class="flex flex-col">
+              <div>
+                <div class="flex justify-between mt-5 md:mt-6">
+                  <p class="font-bold font-radio_2">Track</p>
+                  <p class="opacity-45 font-geist">001</p>
+                </div>
+                <p class="mt-3 font-serif-pro md:mt-4">
+                  Emissions, energy, and waste across your value chain
+                </p>
+              </div>
+
+              <div>
+                <div class="flex justify-between mt-10 md:mt-12">
+                  <p class="font-bold font-radio_2">Model</p>
+                  <p class="opacity-45 font-geist">002</p>
+                </div>
+                <p class="mt-4 font-serif-pro">
+                  Forecast performance and goal alignment
+                </p>
+              </div>
+
+              <div>
+                <div class="flex justify-between mt-10 md:mt-12">
+                  <p class="font-bold font-radio_2">Report</p>
+                  <p class="opacity-45 font-geist">003</p>
+                </div>
+                <p class="mt-3 font-serif-pro md:mt-4">
+                  Generate ESG disclosures, automate frameworks
+                </p>
+              </div>
+
+              <div>
+                <div class="flex justify-between mt-10 md:mt-12">
+                  <p class="font-bold font-radio_2">Act</p>
+                  <p class="opacity-45 font-geist">004</p>
+                </div>
+                <p class="mt-3 font-serif-pro md:mt-4">
+                  Surface insights and operational next steps
+                </p>
+              </div>
+            </div>
+
+            <ul>
+              <li
+                class="h-[46px] bg-black flex items-center justify-center hover: cursor-pointer lg:w-[181px]"
+              >
+                <a
+                  href=""
+                  class="text-white font-radio text-sm flex items-center gap-2 hover:opacity-65 duration-300"
+                >
+                  <span class="w-1.5 h-1.5 bg-white"></span>
+                  Explore features
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-5 bg-[oklch(95.4%_0.038_75.164)] realative">
+        <div
+          class="flex flex-col items-center justify-center pt-10 md:pt-20 lg:pt-[120px]"
+        >
+          <h2 class="text-3xl font-semibold font-serif-pro">
+            Built for clarity
+          </h2>
+          <h2 class="text-4xl font-bold font-radio_2">Designed for action</h2>
+        </div>
+        <div
+          class="flex flex-col mt-8 pb-10 justify-between gap-4 md:mt-10 md:pb-[80px] lg:flex-row lg:pb-[120px]"
+        >
+          <div
+            data-animate
+            class="bg-[oklch(97.1%_0.013_17.38)] px-10 py-10 opacity-0 translate-y-20 transition-all duration-[1200ms] ease-out"
+          >
+            <img
+              src="./img/Built_For_Clarity/Clarity.svg"
+              alt=""
+              class="mb-6"
+            />
+            <div>
+              <p class="font-bold mb-2">Clarity drives action</p>
+              <p>
+                We believe better decisions start with better data—measured,
+                visible, and trusted.
+              </p>
+            </div>
+          </div>
+          <div
+            data-animate
+            class="bg-[oklch(97.1%_0.013_17.38)] px-10 py-10 opacity-0 translate-y-20 transition-all duration-[1200ms] ease-out"
+          >
+            <img
+              src="./img/Built_For_Clarity/Sustainability.svg"
+              alt=""
+              class="mb-6"
+            />
+            <div>
+              <p class="font-bold mb-2">Sustainability is a systems problem</p>
+              <p>
+                We build tools that help teams connect the dots between
+                operations, impact, and accountability.
+              </p>
+            </div>
+          </div>
+          <div
+            data-animate
+            class="bg-[oklch(97.1%_0.013_17.38)] px-10 py-10 opacity-0 translate-y-20 transition-all duration-[1200ms] ease-out"
+          >
+            <img
+              src="./img/Built_For_Clarity/Progress.svg"
+              alt=""
+              class="mb-6"
+            />
+            <div>
+              <p class="font-bold mb-2">Progress over perfection</p>
+              <p>
+                We support real-world momentum—helping organizations move from
+                ambition to measurable change.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        data-animate
+        class="opacity-0 translate-y-20 transition-all duration-[1200ms] ease-out flex flex-col gap-6 px-5 py-[60px] md:flex-row md:gap-10 md:py-20 lg:py-[120px] lg:px-[150px]"
+      >
+        <img
+          src="./img/Why_Acme_inc_chose/Why_Acme_inc_chose.svg"
+          alt=""
+          class="w-full"
+        />
+        <div class="md:mt-[39px] lg:mt-[47px]">
+          <p class="text-lg font-bold font-radio_2 md:text-xl">
+            Why Acme Inc chose Aetherfield
+          </p>
+          <p class="text-lg mt-4 font-serif-pro md:text-xl">
+            With fragmented data and growing reporting pressure, Acme turned to
+            Aetherfield to streamline their ESG workflows. The result? Faster
+            decisions, fewer spreadsheets, and 34% more coverage.
+          </p>
+          <a
+            href=""
+            class="text-sm font-geist mt-6 h-[38px] text-center bg-black text-white font-radio text-sm flex items-center justify-center hover:opacity-65 duration-300 md:w-[150px]"
+            >Read case study</a
+          >
+        </div>
+      </div>
+
+      <div class="px-5 md:px-[90px] lg:px-[330px]">
+        <img
+          src="img/From_the_journal/icon.svg"
+          alt=""
+          data-animate
+          class="opacity-0 translate-y-20 transition-all duration-[1200ms] ease-out float absolute hidden md:block md:left-[-122px] md:top-[3547.05px] lg:left-[72px] lg:top-[3170px]"
+        />
+        <h2
+          data-animate
+          class="opacity-0 translate-y-20 transition-all duration-[1200ms] ease-out font-radio_2 font-bold text-xl md:text-3xl md:font-semibold lg:text-4xl lg:font-bold text-center"
+        >
+          From the journal
+        </h2>
+        <div
+          data-animate
+          class="mt-5 md:mt-10 flex flex-col gap-12 opacity-0 translate-y-20 transition-all duration-[1200ms] ease-out"
+        >
+          <div>
+            <div
+              class="mt-12 md:mt-16 flex flex-col md:flex-row md:gap-4 transition-transform duration-500 hover:translate-x-4 cursor-pointer group"
+            >
+              <img
+                src="./img/From_the_journal/build.svg"
+                alt=""
+                class="w-full md:w-[165px] md:h-[100px]"
+              />
+              <div>
+                <p
+                  class="font-radio_2 font-bold mt-4 mb-2 md:mt-0 group-hover:opacity-45"
+                >
+                  How to Build a Climate-Ready Data Stack
+                </p>
+                <div class="font-sanz flex gap-2 items-center opacity-45">
+                  <p>Insights</p>
+                  <p>·</p>
+                  <p>4 min</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-12 flex flex-col md:flex-row md:gap-4 transition-transform duration-500 hover:translate-x-4 cursor-pointer group"
+            >
+              <img
+                src="./img/From_the_journal/sustainability.svg"
+                alt=""
+                class="w-full md:w-[165px] md:h-[100px]"
+              />
+              <div>
+                <p
+                  class="font-radio_2 font-bold mt-4 mb-2 md:mt-0 group-hover:opacity-45"
+                >
+                  Sustainability Isn’t a Side Project: Making Impact Operational
+                </p>
+                <div class="font-sanz flex gap-2 items-center opacity-45">
+                  <p>Strategy</p>
+                  <p>·</p>
+                  <p>7 min</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-12 flex flex-col md:flex-row md:gap-4 transition-transform duration-500 hover:translate-x-4 cursor-pointer group"
+            >
+              <img
+                src="./img/From_the_journal/inside.svg"
+                alt=""
+                class="w-full md:w-[165px] md:h-[100px]"
+              />
+              <div>
+                <p
+                  class="font-radio_2 font-bold mt-4 mb-2 md:mt-0 group-hover:opacity-45"
+                >
+                  Inside the Aetherfield Model: How We Turn Data Into Action
+                </p>
+                <div class="font-sanz flex gap-2 items-center opacity-45">
+                  <p>Insights</p>
+                  <p>·</p>
+                  <p>5 min</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:flex md:justify-center">
+            <a
+              href="./article.html"
+              class="text-sm font-geist h-[38px] text-center bg-black text-white font-radio text-sm flex items-center justify-center hover:opacity-65 duration-300 md:w-[167px]"
+              >View all articles</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col gap-8 px-5 py-10 md:py-20 md:flex-row md:gap-4 lg:py-30"
+      >
+        <img
+          src="./img/We_Finally_Moved/user.svg"
+          alt=""
+          class="w-full lg: max-w-[612px]"
+        />
+        <div
+          data-animate
+          class="opacity-0 translate-y-20 transition-all duration-[1200ms] ease-out flex flex-col gap-6 md:gap-10 lg:gap-[56px] md:px-10 lg:py-[105px]"
+        >
+          <img
+            src="./img/We_Finally_Moved/Quotation.svg"
+            alt=""
+            class="md:mt-[44px] lg:mt-[158px] w-6 h-5"
+          />
+          <p class="font-bold text-xl md:text-2xl lg:text-3xl">
+            We finally moved past spreadsheets and guesswork. Now we have real
+            data to guide real decisions.
+          </p>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold">Elliot Williams</p>
+            <p class="opacity-45 font-bold">
+              Head of Sustainability, Flux Materials
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center px-5 mt-10 md:mt-20 lg:mt-[120px]">
+        <h4 class="font-bold text-xl md:text-2xl lg:text-3xl text-center">
+          Ready to operationalize your sustainability goals?
+        </h4>
+        <ul class="mt-8 md:mt-12 lg:mt-8">
+          <li
+            class="h-[46px] bg-black flex items-center justify-center hover: cursor-pointer w-[164px]"
+          >
+            <a
+              href=""
+              class="text-white font-radio text-sm flex items-center gap-2 hover:opacity-65 duration-300"
+            >
+              <span class="w-1.5 h-1.5 bg-white"></span>
+              Request a demo
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="mt-10 md:mt-20 lg:mt-[120px]">
+      <picture>
+        <source srcset="./img/Footer_Complete.svg" media="(min-width: 768px)" />
+        <img
+          src="./img/Footer.svg"
+          alt="Sustainability"
+          class="w-full h-auto"
+        />
+      </picture>
+    </footer>
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 1000ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 1000ms !important;
+        }
+      }
+    </style>
+  </body>
+  <script>
+    const btn_more = document.querySelector("#more_header_btn");
+    let icon = document.querySelector("#icon_more_menu");
+    let menu_more = document.querySelector("#list_menu_more");
+
+    btn_more.addEventListener("click", () => {
+      if (icon.src.includes("Menu_icon_more.svg")) {
+        icon.src = "img/Close_Icon.svg";
+        menu_more.classList.remove("hidden");
+        menu_more.classList.add("block");
+      } else {
+        icon.src = "img/Menu_icon_more.svg";
+        menu_more.classList.remove("block");
+        menu_more.classList.add("hidden");
+      }
+    });
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0", "translate-y-20");
+
+          entry.target.classList.add("opacity-100", "translate-y-0");
+
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll("[data-animate]").forEach((el) => {
+      observer.observe(el);
+    });
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.style.setProperty(
+        "--transition-duration",
+        "0.17ms",
+      );
+    }
+  </script>
+</html>

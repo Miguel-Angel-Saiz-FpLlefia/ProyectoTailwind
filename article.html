@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Proyecto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=geist-mono@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              source: ['"Source Serif 4"', "sans-serif"],
+              "serif-pro": ['"Source Serif Pro"', "serif"],
+              radio: ['"Radio Canada Big:Regular"', "sans-serif"],
+              radio_2: ['"Radio Canada Big"', "sans-serif"],
+              geist: ['"Geist Mono"', "monospace"],
+            },
+            backgroundImage: {
+              "background-3":
+                "linear-gradient(180deg, #A6D3FF 0%, #FFF4DF 100%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="w-full h-15 fixed top-0 left-0 bg-transparent flex-col items-center"
+    >
+      <nav class="w-full flex justify-between items-center">
+        <div>
+          <img src="img/Aetherfield_logo.svg" alt="" class="m-5" />
+        </div>
+
+        <ul
+          class="flex items-center justify-end md:justify-between w-auto md:w-[395px] m-4"
+        >
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./index.html">Product</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./journal.html">Journal</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./about.html">About</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./carrers.html">Carrers</a>
+          </li>
+          <li class="hidden md:block">
+            <a
+              href=""
+              class="group md:flex justify-between items-center gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer"
+            >
+              <p>Get started</p>
+              <img
+                src="img/Arrow_Black.svg"
+                alt=""
+                class="transition-transform duration-500 group-hover:translate-x-2"
+              />
+            </a>
+          </li>
+          <li
+            id="more_header_btn"
+            class="block hover:opacity-25 cursor-pointer duration-700 md:hidden lg:hidden"
+          >
+            <img
+              src="./img/Menu_icon_more.svg"
+              alt=""
+              id="icon_more_menu"
+              class="w-4 h-4"
+            />
+          </li>
+        </ul>
+      </nav>
+      <div
+        id="list_menu_more"
+        class="hidden w-full h-96 pr-5 pb-5 pl-5 md:hidden bg-white/80"
+      >
+        <ul>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./index.html">Product</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./journal.html">Journal</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./about.html">About</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./carrers.html">Carrers</a>x
+          </li>
+          <li class="pt-6 flex items-center text-center justify-center">
+            <a
+              href=""
+              class="h-13 w-full bg-[oklch(14.7%_0.004_49.25)] text-2xl text-white group gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer"
+            >
+              <p class="p-4">Get started</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Title Article -->
+
+      <div class="pt-[60px] text-center">
+        <div
+          class="mt-[60px] md:mt-20 flex gap-2 items-center justify-center opacity-45"
+        >
+          <p>Insights</p>
+          <p>·</p>
+          <p>4 min</p>
+        </div>
+        <h1 class="pt-4 text-5xl px-5 lg:px-[125px] font-bold">
+          How to Build a Climate-Ready Data Stack
+        </h1>
+      </div>
+
+      <img
+        src="./img/How_to_Build_a_Climate_Ready_Data_Stack/Image.png"
+        alt=""
+        class="px-5 mt-10 w-full"
+      />
+
+      <div
+        class="flex flex-col gap-8 md:gap-10 px-5 md:px-20 lg:px-0 lg:px-[100px] lg:flex-row lg:gap-[140px]"
+      >
+        <div class="flex justify-between lg:flex-col mt-10 md:mt-20 lg:gap-10">
+          <div class="w-[159.5px]">
+            <p class="opacity-45">Published</p>
+            <p class="font-bold">May 7, 2028</p>
+          </div>
+          <div class="w-[159.5px] md:w-[300px] lg:w-[200px]">
+            <p class="opacity-45">Author</p>
+            <p class="font-bold">Lana Terra</p>
+          </div>
+        </div>
+
+        <div class="lg:mt-20">
+          <p>
+            Climate action is only as strong as the data that informs it. But
+            most data stacks weren’t designed with emissions, supply chains, or
+            climate modeling in mind. Teams are often stuck retrofitting
+            existing systems or relying on brittle workarounds to generate
+            insights. It’s time to rethink our infrastructure—starting with the
+            foundation.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="mt-20 md:mt-24 flex flex-col gap-10 px-10 md:px-20 lg:px-0 lg:pr-[100px] lg:pl-[440px]"
+      >
+        <div class="flex flex-col gap-8">
+          <p class="font-bold">Built for Another Era</p>
+          <p>
+            Most data infrastructures were built to optimize for sales, user
+            growth, or cost—not carbon. This creates friction when
+            sustainability teams try to source emissions data from systems that
+            weren’t designed to capture it. Without foundational visibility,
+            even basic reporting becomes a manual, error-prone task. The result?
+            Delays, duplications, and disconnects.
+          </p>
+        </div>
+        <div>
+          <p class="font-bold">Bridging the Gaps</p>
+          <p>
+            Emissions data lives everywhere—and nowhere. From procurement
+            software to building sensors, critical signals are often siloed
+            across vendors, formats, or departments. The first step to a
+            climate-ready stack is connection: mapping where relevant data
+            lives, how it’s structured, and where the friction points are in
+            accessing it consistently.
+          </p>
+        </div>
+        <div>
+          <p class="font-bold">Stack With Strategy</p>
+          <p>
+            A modern climate stack isn’t just a bundle of tools—it’s an
+            integrated system that mirrors how your business actually operates.
+            This means prioritizing interoperability, aligning metrics across
+            platforms, and investing in foundational data governance. Tools
+            alone won’t solve emissions blind spots—strategy will.
+          </p>
+        </div>
+        <div>
+          <p class="font-bold">Bake in Flexibility</p>
+          <p>
+            Regulatory frameworks, emissions factors, and supplier data are
+            constantly evolving. Your data stack should too. That means
+            designing for modularity, version control, and extensibility.
+            Future-proofing your system is less about predicting what’s next and
+            more about building with change in mind.
+          </p>
+        </div>
+        <div>
+          <p class="font-bold">From Stack to Story</p>
+          <p>
+            At the end of the day, data infrastructure is only valuable if it
+            drives action. A climate-ready stack enables teams to monitor
+            progress, identify trade-offs, and make informed decisions at speed.
+            With the right foundations in place, sustainability becomes more
+            than a report—it becomes a capability.
+          </p>
+        </div>
+      </div>
+
+      <div class="px-5 flex flex-col gap-6 md:gap-5">
+        <div
+          class="mt-20 md:mt-40 lg:mt-50 flex flex-col gap-4 md:flex-row md:justify-between items-center"
+        >
+          <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">
+            Recent articles
+          </h1>
+          <a
+            class="underline hover:cursor-pointer hover:opacity-25 duration-500"
+            >View all articles</a
+          >
+        </div>
+        <div class="flex flex-col gap-8 md:gap-10 lg:flex-row lg:gap-4">
+          <div class="group hover:cursor-pointer">
+            <img src="./img/latest_articles/1.svg" alt="" class="w-full" />
+            <div class="mt-5">
+              <p
+                class="font-radio_2 text-lg md:text-xl lg:text-2xl font-bold mt-5 group-hover:opacity-45"
+              >
+                How to Build a Climate-Ready Data Stack
+              </p>
+              <div class="opacity-25 flex gap-2 mt-2 group-hover:opacity-45">
+                <p>Insights</p>
+                <p>·</p>
+                <p>4 min</p>
+              </div>
+              <p
+                class="mt-6 text-lg md:text-xl lg:text-2xl font-serif-pro group-hover:opacity-45"
+              >
+                A practical guide for sustainability teams on integrating
+                emissions, waste, and energy data into modern workflows.
+              </p>
+            </div>
+          </div>
+
+          <div class="group hover:cursor-pointer">
+            <img src="./img/latest_articles/2.svg" alt="" class="w-full" />
+            <div class="mt-5">
+              <p
+                class="font-radio_2 text-lg md:text-xl lg:text-2xl font-bold mt-5 group-hover:opacity-45"
+              >
+                Sustainability Isn’t a Side Project: Making Impact Operational
+              </p>
+              <div class="opacity-25 flex gap-2 mt-2 group-hover:opacity-45">
+                <p>Strategy</p>
+                <p>·</p>
+                <p>7 min</p>
+              </div>
+              <p
+                class="mt-6 text-lg md:text-xl lg:text-2xl font-serif-pro group-hover:opacity-45"
+              >
+                Why climate goals belong in your core roadmap—not just in the
+                annual ESG report.
+              </p>
+            </div>
+          </div>
+
+          <div class="group hover:cursor-pointer">
+            <img src="./img/latest_articles/3.svg" alt="" class="w-full" />
+            <div class="mt-5">
+              <p
+                class="font-radio_2 text-lg md:text-xl lg:text-2xl font-bold mt-5 group-hover:opacity-45"
+              >
+                Inside the Aetherfield Model: How We Turn Data Into Action
+              </p>
+              <div class="opacity-25 flex gap-2 mt-2 group-hover:opacity-45">
+                <p>Insights</p>
+                <p>·</p>
+                <p>5 min</p>
+              </div>
+              <p
+                class="mt-6 text-lg md:text-xl lg:text-2xl font-serif-pro group-hover:opacity-45"
+              >
+                A behind-the-scenes look at our platform logic, system
+                architecture, and sustainability reasoning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-10 md:mt-20 lg:mt-[120px]">
+      <picture>
+        <source srcset="./img/Footer_Complete.svg" media="(min-width: 768px)" />
+        <img
+          src="./img/Footer.svg"
+          alt="Sustainability"
+          class="w-full h-auto"
+        />
+      </picture>
+    </footer>
+  </body>
+
+  <script>
+    const btn_more = document.querySelector("#more_header_btn");
+    let icon = document.querySelector("#icon_more_menu");
+    let menu_more = document.querySelector("#list_menu_more");
+
+    btn_more.addEventListener("click", () => {
+      if (icon.src.includes("Menu_icon_more.svg")) {
+        icon.src = "img/Close_Icon.svg";
+        menu_more.classList.remove("hidden");
+        menu_more.classList.add("block");
+      } else {
+        icon.src = "img/Menu_icon_more.svg"; // Vuelve a la flecha original
+        menu_more.classList.remove("block");
+        menu_more.classList.add("hidden");
+      }
+    });
+  </script>
+</html>

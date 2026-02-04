@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Proyecto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=geist-mono@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              source: ['"Source Serif 4"', "sans-serif"],
+              "serif-pro": ['"Source Serif Pro"', "serif"],
+              radio: ['"Radio Canada Big:Regular"', "sans-serif"],
+              radio_2: ['"Radio Canada Big"', "sans-serif"],
+              geist: ['"Geist Mono"', "monospace"],
+            },
+            backgroundImage: {
+              "background-3":
+                "linear-gradient(180deg, #A6D3FF 0%, #FFF4DF 100%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background-3">
+    <header
+      class="w-full h-15 fixed top-0 left-0 bg-transparent flex-col items-center"
+    >
+      <nav class="w-full flex justify-between items-center">
+        <div>
+          <img src="img/Aetherfield_logo.svg" alt="" class="m-5" />
+        </div>
+
+        <ul
+          class="flex items-center justify-end md:justify-between w-auto md:w-[395px] m-4"
+        >
+          <li
+            class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="#">Product</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./journal.html">Journal</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./about.html">About</a>
+          </li>
+          <li
+            class="hidden md:block hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./carrers.html">Carrers</a>
+          </li>
+          <li class="hidden md:block">
+            <a
+              href=""
+              class="group md:flex justify-between items-center gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer"
+            >
+              <p>Get started</p>
+              <img
+                src="img/Arrow_Black.svg"
+                alt=""
+                class="transition-transform duration-500 group-hover:translate-x-2"
+              />
+            </a>
+          </li>
+          <li
+            id="more_header_btn"
+            class="block hover:opacity-25 cursor-pointer duration-700 md:hidden lg:hidden"
+          >
+            <img
+              src="./img/Menu_icon_more.svg"
+              alt=""
+              id="icon_more_menu"
+              class="w-4 h-4"
+            />
+          </li>
+        </ul>
+      </nav>
+      <div
+        id="list_menu_more"
+        class="hidden w-full h-96 pr-5 pb-5 pl-5 md:hidden bg-white/80"
+      >
+        <ul>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] font-bold hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="#">Product</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./journal.html">Journal</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./about.html">About</a>
+          </li>
+          <li
+            class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer"
+          >
+            <a href="./carrers.html">Carrers</a>
+          </li>
+          <li class="pt-6 flex items-center text-center justify-center">
+            <a
+              href=""
+              class="h-13 w-full bg-[oklch(14.7%_0.004_49.25)] text-2xl text-white group gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer"
+            >
+              <p class="p-4">Get started</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="mb-[120px]">
+      <div
+        class="mt-[120px] md:mt-[140px] px-5 lg:px-[230px] group text-center"
+      >
+        <a
+          href="./carrers.html"
+          class="group-hover:opacity-45 cursor-pointer duration-500 text-lg md:text-xl lg:text-2xl font-serif-pro"
+          >← Back to Careers</a
+        >
+      </div>
+
+      <div
+        class="px-5 md:mx-10 lg:mx-[230px] mt-6 md:mt-10 bg-[oklch(98.5%_0.001_106.423)] rounded-lg"
+      >
+        <div
+          class="px-5 md:px-10 md:pt-10 pt-6 flex flex-col gap-6 md:flex-row md:gap-10"
+        >
+          <div>
+            <p class="font-bold text-2xl md:text-3xl lg:text-4xl font-sans">
+              Data Scientist
+            </p>
+            <div
+              class="flex gap-2 opacity-45 mt-2 font-serif-pro text-lg md:text-xl lg:text-2xl"
+            >
+              <p>Full-time</p>
+              <p>·</p>
+              <p>Denver, CO</p>
+            </div>
+            <p class="mt-6 font-sans">
+              Help build the intelligence layer for climate action. You’ll turn
+              complex sustainability data into clear, actionable insights for
+              enterprise teams.
+            </p>
+          </div>
+          <div
+            class="w-[100px] h-[38px] bg-black flex items-center justify-center group cursor-pointer"
+          >
+            <a
+              href="#"
+              class="w-[100px] text-white group-hover:opacity-75 duration-500 text-center font-sans font-bold text-sm"
+              >Apply now</a
+            >
+          </div>
+        </div>
+
+        <hr class="mt-[94px] md:mt-12" />
+
+        <div class="mt-8 md:mt-12 px-6 md:px-10 relative">
+          <img
+            src="./img/data_scientist/Stick container.svg"
+            alt=""
+            class="hidden md:block absolute md:top-[712px] md:left-[570.26px] lg:top-[580px] lg:left-[1190.06px]"
+          />
+          <div class="flex flex-col gap-[50px]">
+            <div class="flex flex-col gap-[25px]">
+              <h5 class="font-bold">Company description</h5>
+              <p>
+                At Aetherfield, we build software that empowers companies to
+                lead with climate accountability. Our platform helps
+                sustainability and operations teams make sense of complex
+                environmental data—transforming emissions, waste, and energy
+                metrics into measurable, meaningful action. We’re a
+                mission-driven team of technologists, designers, and scientists
+                working to accelerate the shift toward a low-carbon future.
+              </p>
+            </div>
+            <div class="flex flex-col gap-[25px]">
+              <h5 class="font-bold">About the role</h5>
+              <p>
+                As a Data Scientist at Aetherfield, you’ll help shape the
+                analytical engine behind our platform. You’ll collaborate with
+                product and engineering teams to design models that interpret
+                environmental impact, forecast future trends, and uncover
+                actionable insights for our customers. Your work will directly
+                influence how companies plan, report, and act on their
+                sustainability strategies.
+              </p>
+            </div>
+            <div class="flex flex-col gap-[25px]">
+              <h5 class="font-bold">Requirements</h5>
+              <div>
+                <li>
+                  3+ years of experience in data science or applied analytics
+                  (Python, SQL, etc.)
+                </li>
+                <li>
+                  Experience working with climate, sustainability, or supply
+                  chain datasets is a plus
+                </li>
+                <li>Strong foundation in statistics and data modeling</li>
+                <li>
+                  Ability to communicate complex insights clearly to both
+                  technical and non-technical teams
+                </li>
+                <li>
+                  Curiosity, clarity, and care in how you approach messy data
+                </li>
+                <li>
+                  Passion for solving real-world problems with purpose and
+                  precision
+                </li>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[25px]">
+              <h5 class="font-bold">Company benefits</h5>
+              <div>
+                <li>Competitive salary and equity options</li>
+                <li>Flexible, hybrid work environment</li>
+                <li>Generous PTO and paid volunteer days</li>
+                <li>Annual sustainability stipend</li>
+                <li>Team offsites and climate-focused retreats</li>
+                <li>
+                  A mission-first culture that values clarity, impact, and
+                  integrity
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intermediario -->
+        <hr class="mt-[94px] md:mt-12" />
+        <!-- Ready to help build the future of climate intelligence? -->
+        <div class="flex flex-col items-center pb-6 md:pb-10">
+          <p
+            class="mb-6 md:mb-10 lg:mb-6 text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-8 md:mt-12"
+          >
+            Ready to help build the future of climate intelligence?
+          </p>
+          <div>
+            <ul>
+              <li
+                class="h-[46px] bg-black flex items-center justify-center cursor-pointer w-[122px]"
+              >
+                <a
+                  href=""
+                  class="text-white font-radio text-sm flex items-center gap-2 hover:opacity-65 duration-300"
+                >
+                  <span class="w-1.5 h-1.5 bg-white"></span>
+                  Apply Now
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <picture>
+        <source srcset="./img/Footer_Complete.svg" media="(min-width: 768px)" />
+        <img
+          src="./img/Footer.svg"
+          alt="Sustainability"
+          class="w-full h-auto"
+        />
+      </picture>
+    </footer>
+  </body>
+  <script>
+    const btn_more = document.querySelector("#more_header_btn");
+    let icon = document.querySelector("#icon_more_menu");
+    let menu_more = document.querySelector("#list_menu_more");
+
+    btn_more.addEventListener("click", () => {
+      if (icon.src.includes("Menu_icon_more.svg")) {
+        icon.src = "img/Close_Icon.svg";
+        menu_more.classList.remove("hidden");
+        menu_more.classList.add("block");
+      } else {
+        icon.src = "img/Menu_icon_more.svg"; // Vuelve a la flecha original
+        menu_more.classList.remove("block");
+        menu_more.classList.add("hidden");
+      }
+    });
+  </script>
+</html>
